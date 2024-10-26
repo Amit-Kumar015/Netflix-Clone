@@ -141,11 +141,6 @@ nav button{
     height: 75vh;
 }
 
-@media screen and (max-width: 1300px) {
-    .first{
-        flex-wrap: wrap;
-    }
-}
 
 .secImg img{
     width: 555px;
@@ -178,12 +173,6 @@ section.first > div :nth-child(1){
 section.first > div :nth-child(2){
     font-size: 24px;
 }
-
-/* .third video{
-    width: 19vw;
-    right: 80px;
-    top: 29px;
-} */
 
 .faq h2{
     text-align: center;
@@ -224,12 +213,6 @@ section.first > div :nth-child(2){
     color: white;
 }
 
-@media screen and (max-width: 1300px) {
-    .footer{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
 
 .footer a{
     font-size: 14px;
@@ -251,4 +234,59 @@ footer{
 
 footer .questions{
     padding: 34px 0;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .first{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px){
+    nav img {
+        width: 80px;
+    }
+    .btn {
+        padding: 3px 6px;
+    }
+    .secImg img {
+        width: 331px;
+    }
+    .secImg video {
+        width: 280px;
+    }
+    .hero> :nth-child(1) {
+        font-weight: bolder;
+        font-size: 35px;
+    }
+    .hero> :nth-child(2) {
+        font-weight: 400;
+        font-size: 17px;
+    }
+    .hero> :nth-child(3) {
+        font-weight: 400;
+        font-size: 17px;
+    }
+    .main input {
+        padding: 7px 23px 8px 14px;
+    }
+    .btn-red {
+        padding: 4px 16px;
+        font-size: 15px;
+    }
+    section.first > div :nth-child(1) {
+        font-size: 38px;
+    }
+    section.first > div :nth-child(2) {
+        font-size: 34px;
+    }
+    .faq h2 {
+        font-size: 38px;
+    }
 }
